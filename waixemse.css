@@ -1,0 +1,312 @@
+
+
+
+
+@font-face {
+font-family:caps;
+ src: url("./tsaikhemse-assets/caps.ttf");
+
+}
+
+@font-face {
+font-family:bold;
+  src: url("./tsaikhemse-assets/normal-bold.ttf");
+}
+
+ *{
+    
+    text-decoration: none;
+    list-style: none;
+ 
+ 
+      }
+
+
+      body {
+        max-width: 1084px;
+        margin: 0 auto; }
+
+
+
+
+
+
+
+
+
+.header-container {
+  background-color:white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  
+}
+
+.header-container::before{
+
+  display: fixed;
+}
+
+
+.logo {
+  margin:30px;
+}
+
+
+.nav {
+
+  margin:20px;
+  font-weight:bold;
+  color:black;
+  font-size:14px;
+}
+
+.nav:hover {
+color:#BADC58;
+
+}
+
+.main-container {
+
+  height: calc(110vh - 60px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+        text-align: center;
+ z-index: 200;
+        }
+
+      
+main::before{
+  width: 100%;
+  content: '';
+  position: absolute;
+  height: calc(110vh - 60px);
+  background-color:#0c040799;
+  z-index: -2;
+  
+
+
+}
+
+
+  
+
+
+.mainimage {
+  width: 100%;
+    height: calc(110vh - 60px);
+    position: absolute;
+    left: 0;
+    top: 60px;
+    bottom: 0;
+    right: 0;
+  z-index: -2;
+  object-fit: cover;
+  object-position: center;
+} 
+
+.mainimg {
+
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+}
+
+
+
+
+
+    .main-container h1 {
+color:white;
+font-weight: normal;
+font-size: 50px;
+filter: contrast(80%);
+margin-bottom: 40px;
+
+  }
+
+ .main-container p {
+line-height: 22px;
+color:white;
+font-weight: bold;
+filter: contrast(80%);
+ }
+ 
+
+
+
+
+  .blockSpan {
+    display: block;
+   line-height:2;
+  }
+
+
+
+  .vrclad {
+    text-align: center;
+    display: inline-block;
+    background: #BADC58;
+    color: #181818;
+    padding:14px 60px;
+    border-radius: 10px;
+    border:1px solid;
+    filter: contrast(80%);
+   
+  }
+
+  p:last-child {
+   font-weight: bold;
+    color:white;
+    font-size: 12px;
+    text-align: center;
+    line-height: 22px;
+    margin-top:100px;
+
+  }
+
+
+  p:last-child::after {
+
+    content: url('./tsaikhemse-assets/Arrow@2x.png');
+    margin-top: 30px;
+    line-height:25px;
+    display: block;
+    
+}
+
+
+
+
+ section {
+
+    background-color: #FFFFFF;
+	position: relative;
+
+	padding: 25px;
+    }
+
+    section h2 {
+      text-align: center;
+      width: 100%;
+      background-color:white; }
+
+    section::before {
+      content: '';
+      position:absolute;
+	background-color: #FFFFFF;
+	width: 100%;
+	height:60px;
+	top: -53px;
+	left:0;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+
+    }
+
+    section::after{
+      position:absolute;
+	background-color:red;
+	width: 100%;
+	height:6px;
+	bottom: -60px;
+	left:0;  }
+
+   
+.containerul {
+background-color:white;
+    list-style-type: disc;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end:0px;
+    padding-inline-start: 0px;
+  display: block;
+  padding: 0px 0px 0px 0px;
+}
+
+
+
+
+    .info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+     text-align: center;
+     border-radius: 20px;
+     width: 100%;
+     height: 60em;
+      border:1px white;
+      padding: 9px 29px 29px 29px;
+    }
+
+   
+.containerul h3 {
+  font-size: 16px;
+  line-height: 18px;
+  color: #181818;
+  height: 37px;
+}
+    .containerul p {
+
+      font-size: 10px;
+      line-height: 18px;
+      color: #535C68;    
+    }
+    .containerul button {
+      color: #BADC58;
+    cursor: pointer;
+    padding: 13px 50px;
+    border: 1px solid #BADC58;
+    border-radius: 10px;
+    background-color:white;
+
+    }
+
+    .containerul button:hover {
+      
+      background-color: #BADC58;     
+    }
+
+/* FOOTER  /////////////////////////////////////////////////////*/
+
+
+    
+
+
+    address {
+      background-color: #FFF;
+      border: 1px solid #FFF;
+      width: 100%;
+      height: 60px;
+      border-radius: 20px;
+      text-align: center;
+      color: #F59A63;
+      padding:20px 250px 21px 250px;
+      font-size: 14px;
+      padding-top: 20px;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+      }
+
+
+      .map{
+        width: 100%;
+        height: 290px;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 31px;
+        overflow: hidden;
+    }
+    
+
+    .footer_icons {
+      display: flex;
+      justify-content: space-between;
+    }
